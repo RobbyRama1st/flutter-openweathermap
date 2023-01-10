@@ -20,4 +20,4 @@ Aplikasi cuaca sederhana yang dibuat menggunakan [Flutter](https://flutter.dev/)
 - Informasi cuaca 7 hari kedepan
 
 ## Install Apk
-Untuk mencoba install apk silahakan download [Disini](https://drive.google.com/file/d/1pZ8INjv1z5xC5x-6StmMBqqtbSgT30r1/view?usp=sharing)
+Untuk mencoba install apk silahkan download [Disini](https://drive.google.com/file/d/1pZ8INjv1z5xC5x-6StmMBqqtbSgT30r1/view?usp=sharing)
