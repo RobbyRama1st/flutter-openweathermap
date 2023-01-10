@@ -1,9 +1,10 @@
-import 'package:weather_app_test/models/coordinates.dart';
+
+import 'package:weather_app_test/models/coord.dart';
 
 class City {
   int? id;
   String? name;
-  Coordinates? coord;
+  Coord? coord;
   String? country;
   int? population;
   int? timezone;
@@ -19,7 +20,7 @@ class City {
   City.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     name = json['name'];
-    coord = json['coord'] != null ? Coordinates.fromJson(json['coord']) : null;
+    coord = json['coord'] != null ? Coord.fromJson(json['coord']) : null;
     country = json['country'];
     population = json['population'];
     timezone = json['timezone'];

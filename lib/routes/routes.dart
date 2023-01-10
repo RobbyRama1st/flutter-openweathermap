@@ -15,7 +15,7 @@ class Routes {
       case splashPageRoute:
         return PageTransition(
           BlocProvider(
-            create: (context) => SplashCubit(),
+            create: (context) => SplashCubit(service: WeatherService()),
             child: SplashPage(),
           ),
         );

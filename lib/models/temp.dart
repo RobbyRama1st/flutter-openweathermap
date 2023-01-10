@@ -1,4 +1,4 @@
-class Temperature {
+class Temp {
   double? day;
   double? min;
   double? max;
@@ -6,9 +6,9 @@ class Temperature {
   double? eve;
   double? morn;
 
-  Temperature({this.day, this.min, this.max, this.night, this.eve, this.morn});
+  Temp({this.day, this.min, this.max, this.night, this.eve, this.morn});
 
-  Temperature.fromJson(Map<String, dynamic> json) {
+  Temp.fromJson(Map<String, dynamic> json) {
     day = json['day'].toDouble();
     min = json['min'].toDouble();
     max = json['max'].toDouble();

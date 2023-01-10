@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:weather_app_test/routes/path.dart';
 import 'package:weather_app_test/routes/routes.dart';
 
@@ -8,23 +9,23 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // ignore: prefer_const_literals_to_create_immutables
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [
+         Locale('id', 'ID'),
+      ],
       initialRoute: splashPageRoute,
       onGenerateRoute: Routes().onGenerateRoute,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.light().copyWith(
-        colorScheme: ColorScheme.light(
-        primary: Colors.blue,
-        secondary: Colors.deepOrangeAccent,
-        error: Colors.red,
-      ),
-      floatingActionButtonTheme: const FloatingActionButtonThemeData(
-        backgroundColor: Colors.lightBlueAccent,
-      ),
-      inputDecorationTheme: InputDecorationTheme(
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
+      theme: ThemeData(
+        textTheme: Theme.of(context).textTheme.apply(
+          bodyColor: Colors.white,
+          displayColor: Colors.blue
         ),
-      ),
       ),
     );
   }

@@ -7,25 +7,36 @@ abstract class HomeState extends Equatable {
   List<Object> get props => [];
 }
 
-class HomePageInitial extends HomeState {}
+class HomeInitialState extends HomeState {}
 
-class HomePageLoading extends HomeState {}
+class HomeLoadingState extends HomeState {}
 
-class HomePageDisposeLoading extends HomeState {}
+class HomeDisposeLoadingState extends HomeState {}
 
-class HomePageLoadSuccess extends HomeState {
-  final WeatherForecast value;
+class HomeLoadCurrentSuccessState extends HomeState {
+  final CurrentWeather value;
 
-  const HomePageLoadSuccess({required this.value});
+  const HomeLoadCurrentSuccessState({required this.value});
 
   @override
   List<Object> get props => [value];
 }
 
-class HomePageLoadFailed extends HomeState {
+class HomeLoadCurrentFailedState extends HomeState {
   @override
   List<Object> get props => [];
 }
 
+class HomeLoadHourlySuccessState extends HomeState {
+  final ListWeather value;
 
-class HomePageLoadError extends HomeState {}
+  const HomeLoadHourlySuccessState({required this.value});
+
+  @override
+  List<Object> get props => [value];
+}
+
+class HomeLoadHourlyFailedState extends HomeState {
+  @override
+  List<Object> get props => [];
+}
