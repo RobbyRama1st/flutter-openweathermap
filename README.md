@@ -6,3 +6,18 @@
 <img src="https://user-images.githubusercontent.com/82755985/211477185-ea6063c6-ce86-45e3-87fb-465870a113fc.jpg" width="30%"></img> 
 </p>
 
+# FlutterWeather
+
+Aplikasi cuaca sederhana yang dibuat menggunakan [Flutter](https://flutter.dev/) and [Dart](https://dart.dev/) dan menggunakan API dari [OpenWeatherMap](https://openweathermap.org/)
+
+# Environtment
+- State management menggunakan BloC pattern
+- Java JDK 1.8
+
+## Features
+- Secara otomatis mendapatkan lokasi pengguna saat ini
+- Informasi cuaca setiap jam
+- Informasi cuaca 7 hari kedepan
+
+## Install Apk
+Untuk mencoba install apk silahakan download [Disini](https://drive.google.com/file/d/1pZ8INjv1z5xC5x-6StmMBqqtbSgT30r1/view?usp=sharing)
