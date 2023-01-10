@@ -16,7 +16,8 @@ Aplikasi cuaca sederhana yang dibuat menggunakan [Flutter](https://flutter.dev/)
 
 ## Features
 - Secara otomatis mendapatkan lokasi pengguna saat ini
-- Informasi cuaca setiap jam
+- Informasi cuaca saat ini
+- Informasi cuaca 4 jam kedepan
 - Informasi cuaca 7 hari kedepan
 
 ## Install Apk
